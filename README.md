@@ -11,18 +11,18 @@ Feature Selection is a process of selecting a subset of relevant features(variab
 
 
 ## Filter Selection methods: 
-1. Filter methods: Rely on characteristics of data. **Do not use machine learning model** at all (**Model agnostic**) so less computationally expensive. Very well suited for quick screen and removal of irrelevant features. Usually gives lower predictive performance than a wrapper methods. Filter methods are generally the first step in feature selection procedures.
-    * Basics:
+1. **Filter methods**: Rely on characteristics of data. **Do not use machine learning model** at all (**Model agnostic**) so less computationally expensive. Very well suited for quick screen and removal of irrelevant features. Usually gives lower predictive performance than a wrapper methods. Filter methods are generally the first step in feature selection procedures.
+    * **Basics**:
         - Constant 
         - Quasi Constant
         - Duplicated 
-    * Statistical measures 
+    * **Statistical measures**
         - Chi Square | Fisher score
         - Univariate methods (ANOVA)
         - Mutual Information 
-    * Correlation
+    * **Correlation**
 
-    Two steps procedure (Univariate):<br>
+    **Two steps procedure** (Univariate):<br>
     * Rank features according to certain criteria.
       - Each feature is ranked independently of the feature space.  
     * Select the highest ranking features.
@@ -32,18 +32,18 @@ Feature Selection is a process of selecting a subset of relevant features(variab
 
     
          
-2. Wrapper methods: Use machine learning models to score the feature subset. Train a new model on each feature subset that's why computationally expensive. Provide the best feature subset for a **given** machine learning model.
+2. **Wrapper methods**: Use machine learning models to score the feature subset. Train a new model on each feature subset that's why computationally expensive. Provide the best feature subset for a **given** machine learning model.
    * Step Forward selection
    * Step Backward selection
    * Exhaustive selection
    * Feature Shuffling (Alternative Wrapper method)
 
-3. Embedded methods: Perform feature selection as a part of model construction process. Less computationally expensive as they fit model only once. 
+3. **Embedded methods**: Perform feature selection as a part of model construction process. Less computationally expensive as they fit model only once. 
     * Lasso 
     * Decision Tree derived Importance (Tree Importance)
     * Regression coefficients
 
-4. Hybrid Methods: Hybrid methods are the combination of wrapper and embedded methods that leverages best of both worlds
+4. **Hybrid Methods**: Hybrid methods are the combination of wrapper and embedded methods that leverages best of both worlds
     * Recursive Feature Elimination (RFE)
 
 
