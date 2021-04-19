@@ -71,7 +71,9 @@ Feature Selection is a process of selecting a subset of relevant features(variab
     * Remove non-important features
 
 4. **Hybrid Methods**: Hybrid methods are the combination of wrapper and embedded methods that leverages best of both worlds
-    * Recursive Feature Elimination (RFE)
+    * Feature Shuffling -- Shuffle a feature, build a model and note down the performance drop. If the performance drop is huge, then that feature is probably important. Repeat this procedure for all of the features and select the top n features where drop > certain_threshold. There is no stopping criteria, it will stop when all features are shuffled. We need to decide which feature to choose. Keep n #features where drift(full model performance-shuffled performance) was highest.
+    * Recursive Feature Elimination (RFE) -- 
+    * Recursive Feature Addition (RFA) -- 
 
 
 Feature Selection Technique should be perfomed on Training dataset to avoid overfitting.
