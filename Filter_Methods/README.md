@@ -28,13 +28,14 @@
 
  ### **3.1 Mutual Information**
 
- Tells about the mutual dependence of two variables. If two variables are independent mutual information is zero. **Only works with numerical variables. Can be used for both Classification and Regression**
+ Tells about the mutual dependence of two variables. It will tell how much information is gained about one variable by observing the values in another variable. If two variables are independent mutual information is zero. **Only works with numerical variables. Can be used for both Classification and Regression**
  
  1. How much of one variable can be explained using another variable. 
  2. How much information does two variable X and Y share.
+ 3. Mutual information determines how much is the difference between the joint probability distribution and the individual probability distribution
 
 
- Mutual information formaula
+ [Mutual information formula link](https://en.wikipedia.org/wiki/Mutual_information)
 
 
  ### **3.2 Fisher Score**
